@@ -41,3 +41,5 @@ while True:
     t=t+dt
     square.pos.x=amplitude*cos(omega*t)
     spring.axis=square.pos-spring.pos
+    
+    
