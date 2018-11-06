@@ -8,4 +8,4 @@ The goal of these demos is to visualize various physical phenomena, thereby fasc
 All scripts are obtained from open source projects and/or writen by the textbook authors.
 
 Permission is hereby granted, free of charge, to any person obtaining the copy of the source code to use,
-copy, modify, and distribute in educational non-commercial purposes.
+copy, modify, and distribute in non-commercial educational purposes.
