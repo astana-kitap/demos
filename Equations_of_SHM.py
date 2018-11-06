@@ -2,15 +2,11 @@ GlowScript 2.7 VPython
 
 
 #Change omega value
-omega=1
+omega=0.5
+
+
+############### NO EDITING BELOW THIS LINE #######################
 amplitude=5
-
-
-
-
-
-
-##############################################################
 x_axis=arrow(pos=vector(0,1.5,0), axis=vector(amplitude+2,0,0), shaftwidth=0.05)
 y_axis=arrow(pos=vector(0,1.5,0), axis=vector(0,amplitude+2,0), shaftwidth=0.05)
 
@@ -30,8 +26,12 @@ spring=helix(pos=vector(-(amplitude+3),-(amplitude+2),0),
 
 wall=box(pos=vector(-(amplitude+3),-(amplitude+2),0), size=vector(0.1, 3,3) )
 
+connection=cylinder(pos=ball.pos, axis=square.pos-ball.pos, radius=0.1)
+
 t=0
 dt=0.005
+
+
 
 
 
@@ -41,5 +41,5 @@ while True:
     t=t+dt
     square.pos.x=amplitude*cos(omega*t)
     spring.axis=square.pos-spring.pos
-    
-    
+    connection.pos=ball.pos
+    connection.axis=square.pos-ball.pos
