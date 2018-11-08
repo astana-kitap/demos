@@ -4,6 +4,13 @@ GlowScript 2.7 VPython
 
 '''
   Description:
+  This is a demo for AM modulated wave formation.
+  The carrier signal with no information is combined with a base band wave 
+  which carries the neccessary information.
+  At any instance of time the amplitude of the resulting wave equals to the 
+  sum of instantaneous amplitudes of 2 waves.
+  
+  Input values:
   A_c: amplitude of carrier signal
   w_c: angular frequency of carrier signal
   
