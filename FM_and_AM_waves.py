@@ -1,14 +1,34 @@
 GlowScript 2.7 VPython
 
 
+
+'''
+  Description:
+  A_c: amplitude of carrier signal
+  w_c: angular frequency of carrier signal
+  
+  A_m: amplitude of base band signal
+  w_m: angular frequency of base band signal
+
+  Change the values of A_c, w_c, A_m, w_m.
+  In particular, observe cases:
+    - A_c  >  A_m
+    - A_c  <  A_m
+    - A_c  =  A_m
+  and observe how the resulting graph varies with
+  these parameters.
+
+
+
+'''
 A_c=10
 w_c=40
-A_m=10
+A_m=20
 w_m=5
 
 
 
-
+############## No changes below this line ###########
 
 
 T_c=2*pi/w_c
@@ -54,53 +74,13 @@ for t in time:
 
 scene_3=canvas(title="Result", width=800, height=300)
 
+shift=3*shift
 
 y0=( A_c + A_m*sin(w_m*time[0]))*sin(w_c*time[0])
 
-shift=3*shift
 curve_3=curve(pos=vector(shift,y0,z0))
 
 time=arange(0,5*t_limit, 5*t_limit/500)
 for t in time:
     result=(A_c + A_m*sin(w_m*t))*sin(w_c*t)
     curve_3.append(vector(t+shift, result, 0))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
