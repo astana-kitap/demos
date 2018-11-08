@@ -57,6 +57,7 @@ scene_3=canvas(title="Result", width=800, height=300)
 
 y0=( A_c + A_m*sin(w_m*time[0]))*sin(w_c*time[0])
 
+shift=3*shift
 curve_3=curve(pos=vector(shift,y0,z0))
 
 time=arange(0,5*t_limit, 5*t_limit/500)
