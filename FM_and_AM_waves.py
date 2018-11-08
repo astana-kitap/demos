@@ -28,10 +28,17 @@ GlowScript 2.7 VPython
 
 
 '''
+
+
+
+#### Change the input parameters ###################
 A_c=10
 w_c=40
 A_m=20
 w_m=5
+
+
+
 
 
 
