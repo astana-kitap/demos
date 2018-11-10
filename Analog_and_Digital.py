@@ -99,8 +99,6 @@ for t in time_digital:
 for i in range(len(y_closest_array)-1):
     t_1=time_digital[i]
     t_2=time_digital[i+1]
-    print(t_1)
-    print(t_2)
     y_1=y_closest_array[i]
     y_2=y_closest_array[i+1]
 
