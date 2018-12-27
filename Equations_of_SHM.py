@@ -6,6 +6,7 @@ omega=0.5
 
 
 ############### NO EDITING BELOW THIS LINE #######################
+scene=canvas(width=800, height=700)
 amplitude=5
 x_axis=arrow(pos=vector(0,1.5,0), axis=vector(amplitude+2,0,0), shaftwidth=0.05)
 y_axis=arrow(pos=vector(0,1.5,0), axis=vector(0,amplitude+2,0), shaftwidth=0.05)
